@@ -20,3 +20,6 @@ Route::get('/custom',function (){
 
     dD(config('blog.creator'));
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
